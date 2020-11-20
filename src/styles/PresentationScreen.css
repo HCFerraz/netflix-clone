@@ -1,9 +1,8 @@
 .container {
-    background: url(../assets/netflix-cover.jpg);
+    background: url(../assets/netflix-cover-2.jpg);
     position: relative;
-    height: 100vh;
+    height: 720px;
     background-size: 100% auto;
-    /* filter: brightness(50%); */
 }
 .container::after {
     content: '';
@@ -14,7 +13,7 @@
     height: 100%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.6);
-    box-shadow: inset 0px 60px 100px 50px #000000 ;
+    box-shadow: inset 0px 40px 100px 20px #000000 ;
 }
 .text-wrapper {
     position: relative;
@@ -73,13 +72,11 @@
     justify-content: center;
     align-items: center;
 }
+.search-box > button > i {
+    margin-top: 8px;
+    margin-left: 8px;
+}
 .search-box > button:hover {
     cursor: pointer;
     background-color: #F40612;
 }
-/* .container > img {  
-    height: 100%;
-    width: 100%;
-    background-size: 100% auto;
-    filter: brightness(50%);
-} */
