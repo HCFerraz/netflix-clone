@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-const Container = styled.div`
+const HomeContainer = styled.div`
     height: 475px;
     width: 100%;
     display: flex;
     align-items: center;
     background-color: #000000;
 `
-const TextWrapper = styled.div`
+const HomeTextWrapper = styled.div`
     margin-left: 7%;
     margin-right: 10px;
 `
@@ -20,7 +20,7 @@ const Description = styled.p`
     font-size: 26px;
     line-height: 120%;
 `
-const AnimationContainer = styled.div`
+const HomeAnimationContainer = styled.div`
     position: relative;
     min-width: 528px;
     display: flex;
@@ -32,13 +32,13 @@ const AnimationImage = styled.img`
     width: 100%;
     z-index: 1;
 `
-const AnimationVideo = styled.div`
+const HomeAnimationVideo = styled.div`
     position: absolute;
     width: 73%;
     top: 82px;
     left: 70px;
 `
-const RowReverseContainer = styled(Container)`
+const DownloadContainer = styled(HomeContainer)`
     flex-direction: row-reverse;
     height: 465px;
     justify-content: start
@@ -59,45 +59,51 @@ const Download = styled.div`
     top: 335px;
     left: 105px;
 ` 
-const TextSecond = styled(TextWrapper)`
+const DownloadTextWrapper = styled(HomeTextWrapper)`
     margin-top: 80px;
     margin-left: 0px;
     margin-right: 0px;
     max-width: 500px;
     margin-bottom: 50px
 `
-const AnimationContSecond = styled(AnimationContainer)`
+const DownloadAnimationImage = styled(AnimationImage)`
+    margin-left: 12px; 
+    margin-top: 74px; 
+    width: 79%
+`
+const DownloadAnimationContainer = styled(HomeAnimationContainer)`
     margin-bottom: 95px;
     margin-right: 0px
 `
-const AnimationThird = styled(AnimationVideo)`
+const WatchAnywhereAnimationVideo = styled(HomeAnimationVideo)`
     width: 61%;
     top: 43px;
     left: 100px
 `
-const TextThird = styled(TextWrapper)`
+const WatchAnywhereTextWrapper = styled(HomeTextWrapper)`
     margin-right: 18px
 `
-const ThirdAniCont = styled(AnimationContainer)`
+const WatchAnywhereAnimationContainer = styled(HomeAnimationContainer)`
     min-width: 545px
 `
-const ThirdContainer = styled(Container)`
+const WatchAnywhereContainer = styled(HomeContainer)`
     height: 500px
 `
 export {
-    Container,
-    TextWrapper,
+    HomeContainer,
+    HomeTextWrapper,
     Title,
     Description,
-    AnimationContainer,
+    HomeAnimationContainer,
     AnimationImage,
-    AnimationVideo,
-    RowReverseContainer,
+    HomeAnimationVideo,
+    DownloadContainer,
     Download,
-    TextSecond,
-    AnimationContSecond,
-    AnimationThird,
-    TextThird,
-    ThirdAniCont,
-    ThirdContainer
+    DownloadTextWrapper,
+    DownloadAnimationContainer,
+    DownloadAnimationImage,
+    WatchAnywhereContainer,
+    WatchAnywhereAnimationContainer,
+    WatchAnywhereAnimationVideo,
+    WatchAnywhereTextWrapper
 }

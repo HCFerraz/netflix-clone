@@ -1,0 +1,13 @@
+.question-screen-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    min-height: 850px;
+    background-color: #000000
+}
+.question-screen-container > p {
+    font-size: 48.5px;
+    font-weight: bold;
+    margin-top: 32px
+}

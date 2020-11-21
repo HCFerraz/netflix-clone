@@ -1,10 +1,10 @@
-.container {
-    background: url(../assets/netflix-cover-2.jpg);
+.presentation-screen-container {
+    background: url(../assets/NetflixCover.jpg);
     position: relative;
     height: 720px;
     background-size: 100% auto;
 }
-.container::after {
+.presentation-screen-container::after {
     content: '';
     position: absolute;
     top: 0;
@@ -15,68 +15,51 @@
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: inset 0px 40px 100px 20px #000000 ;
 }
-.text-wrapper {
+.presentation-wrapper {
     position: relative;
     z-index: 2;
 }
-.text-wrapper > div {
+.presentation-wrapper > div {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
     margin-top: -27px
 }
-.text-wrapper > section {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 120px
-}
-.text-wrapper > div > button {
+.presentation-wrapper > div > button {
     font-size: 16px;
     border: 0;
     margin-right: 55px;
     line-height: 100%;
     height: 35px;
-    padding-left: 20px;
     border-radius: 3px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 20px;
     text-align: center;
     background-color: #E50914;
-    color: #F2D8FF
+    color: #F2D8FF;
+    cursor: pointer;
 }
-.text-wrapper > div > img {
+.presentation-wrapper > div > img {
     margin-left: 55px; 
     width: 135px;
 }
-.search-box {
-    display: flex;
+.presentation-wrapper > section {
+    display: flex; 
+    flex-direction: column;
     justify-content: center;
-    margin-top: 25px;
-    z-index: 2;
+    margin-top: 130px
 }
-.search-box > input {
-    width: 450px;
-    height: 60px;
-    font-size: 16.5px;
+.presentation-wrapper > section > h1 {
+    text-align: center; 
+    font-weight: bold; 
+    font-size: 48px;
+    line-height: 110%;
 }
-.search-box > button {
-    height: 60px;
-    width: 182px;
-    background-color: #E50914; 
-    color: white;
-    border: 0;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.presentation-wrapper > section > h2 {
+    text-align: center; 
+    font-size: 26px; 
+    padding-top: 20px; 
+    padding-bottom: 42px
 }
-.search-box > button > i {
-    margin-top: 8px;
-    margin-left: 8px;
-}
-.search-box > button:hover {
-    cursor: pointer;
-    background-color: #F40612;
+.presentation-wrapper > section > span {
+    margin-bottom: 20px;
 }

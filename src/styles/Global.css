@@ -16,7 +16,7 @@ html, body {
     height: 100%;
     letter-spacing: .1px;
 }
-h1, h2, h3, p {
+h1, h2, h3, p, span {
     color: white;
 }
 li:nth-child(4n - 7) {

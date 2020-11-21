@@ -1,43 +1,43 @@
-.screen-container {
+.information-screen-container {
     height: 440px;
     background-color: #000000;
     display: flex;
     flex-direction: column;
     justify-content: center
 }
-.information-container {
+.informations-container {
     margin-left: 190px; 
     height: 82%
 }
-.information-container > p {
+.informations-container > p {
     color: #757575; 
     margin-top: 34px
 }
-.information-container > p > a {
-    color: #757575;
-    text-decoration: none;
-}
-.information-container > p > a:hover {
-    text-decoration: underline;
-}
-.information-container > p:last-child {
+.informations-container > p:last-child {
     font-size: 13px;
     color: #757575; 
     margin-top: 27px
 }
-.information-list-container {
+.informations-container > p > a {
+    color: #757575;
+    text-decoration: none;
+}
+.informations-container > p > a:hover {
+    text-decoration: underline;
+}
+.informations-list-container {
     height: 170px;
     width: 868px;
     display: flex;
     justify-content: center;
     margin-top: 16px
 }
-.information-list-container > ul {
+.informations-list-container > ul {
     list-style-type: none; 
     margin: 0; 
     padding: 0;
 }
-.select-container {
+.select-language-container {
     margin-top: 35px;
     display: grid;
     grid-template-areas: "select";
@@ -45,7 +45,7 @@
     width: 160px;
     grid-area: select;
 }
-.select-container::after {
+.select-language-container::after {
     justify-self: end;
     content: "";
     width: 10px;
@@ -55,12 +55,12 @@
     margin-right: 10px;
     grid-area: select;
 }
-.select-container > i {
+.select-language-container > i {
     position: absolute;
     margin-top: 5px;
     margin-left: 15px;
 }
-.select-container > select {
+.select-language-container > select {
     height: 50px;
     background-color: black;
     font-family: inherit;

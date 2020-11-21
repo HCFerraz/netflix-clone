@@ -1,37 +1,38 @@
-import Feature from '../components/Feature'
+import FeatureContainer from '../components/Features/Container/index'
 import DivisionBar from '../components/UI/DivisionBar'
-import TV from '../assets/tv.png'
-import FVid from '../assets/firstVideo.m4v'
-import Eleven from '../assets/secondScreen.jpg'
-import Mac from '../assets/thirdDisplay.png'
-import SVid from '../assets/secondVideo.m4v'
-import Icon from '../assets/downloadIcon.gif'
-import Stranger from '../assets/strangerThingsWallpaper.png'
+import HomeDisplay from '../assets/HomeDisplay.png'
+import Home from '../assets/Home.m4v'
+import StrangerThingsDownloadCellphone from '../assets/StrangerThingsDownloadCellphone.jpg'
+import WatchAnywhereDisplay from '../assets/WatchAnywhereDisplay.png'
+import StrangerThingsVideo from '../assets/StrangerThings.m4v'
+import DownloadGif from '../assets/Download.gif'
+import StrangerThingsWallpaper from '../assets/StrangerThingsWallpaper.png'
 
 function FeaturesScreen() {
     return (
         <>
             <DivisionBar />
-            <Feature
+            <FeatureContainer
                 title="Aproveite na TV."
                 description="Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros aparelhos."
-                display={TV}
-                screen={FVid}
-                first/>
+                display={HomeDisplay}
+                screen={Home}
+                container="First"/>
             <DivisionBar />
-            <Feature
+            <FeatureContainer
                 title="Baixe séries para assistir offline."
                 description="Salve seus títulos favoritos e sempre tenha algo para assistir."
-                display={Eleven}
-                icon={Icon}
-                stranger={Stranger}
-                second/>
+                display={StrangerThingsDownloadCellphone}
+                gif={DownloadGif}
+                wallpaper={StrangerThingsWallpaper}
+                container="Second"/>
             <DivisionBar />
-            <Feature
+            <FeatureContainer
                 title="Assista quando quiser."
                 description="Assista no celular, tablet, smart TV ou notebook sem pagar a mais por isso." 
-                display={Mac}
-                screen={SVid}
+                display={WatchAnywhereDisplay}
+                screen={StrangerThingsVideo}
+                container="Third"
                 />
             <DivisionBar />
         </>

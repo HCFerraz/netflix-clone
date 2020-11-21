@@ -4,10 +4,10 @@ import { IoIosGlobe } from 'react-icons/io'
 
 function Informations() {
     return (
-        <div className="screen-container">
-            <div className="information-container">
+        <div className="information-screen-container">
+            <div className="informations-container">
                 <p>Dúvidas? Ligue <a href="tel:0800-761-4631">0800-761-4631</a></p>
-                <div className="information-list-container">
+                <div className="informations-list-container">
                     <ul>
                         <ListItem link="https://help.netflix.com/support/412" text="Perguntas frequentes" />
                         <ListItem link="https://help.netflix.com" text="Centro de ajuda" />
@@ -28,7 +28,7 @@ function Informations() {
                         <ListItem link="https://www.netflix.com/br/browse/genre/839338" text="Originais Netflix" />
                     </ul>
                 </div>
-                <div className="select-container">
+                <div className="select-language-container">
                     <i><IoIosGlobe size="19px" color="#999999" /></i>
                     <select>
                         <option value="Português">Português</option>
