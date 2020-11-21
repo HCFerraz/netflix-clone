@@ -1,41 +1,41 @@
-import Link from '../components/pInformation'
-import "../styles/test.css"
+import "../styles/InformationScreen.css"
+import { ListItem } from '../components/Informations/List/index'
 import { IoIosGlobe } from 'react-icons/io'
 
 function Informations() {
     return (
-        <div style={{ height: "440px", backgroundColor: "#000000", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-            <div style={{ marginLeft: "190px", height: "82%" }}>
-                <p style={{ color: "#757575", marginTop: "34px" }}>Dúvidas? Ligue <a>0800-761-4631</a></p>
-                <div style={{ height: "170px", width: "868px", display: "flex", justifyContent: 'center', marginTop: "16px" }}>
-                    <ul className="saas" style={{ listStyleType: "none", margin: "0", padding: "0" }}>
-                        <Link text="Perguntas frequentes" />
-                        <Link text="Centro de ajuda" />
-                        <Link text="Conta" />
-                        <Link text="Imprensa" />
-                        <Link text="Relações com investidores" />
-                        <Link text="Carreiras" />
-                        <Link text="Resgatar cartão pré-pago" />
-                        <Link text="Comprar cartão pré-pago" />
-                        <Link text="Formas de assistir" />
-                        <Link text="Termos de uso" />
-                        <Link text="Privacidade" />
-                        <Link text="Preferências de cookies" />
-                        <Link text="Informações corporativas" />
-                        <Link text="Entre em contato" />
-                        <Link text="Teste de velocidade" />
-                        <Link text="Avisos legais" />
-                        <Link text="Originais Netflix" />
+        <div className="screen-container">
+            <div className="information-container">
+                <p>Dúvidas? Ligue <a href="tel:0800-761-4631">0800-761-4631</a></p>
+                <div className="information-list-container">
+                    <ul>
+                        <ListItem link="https://help.netflix.com/support/412" text="Perguntas frequentes" />
+                        <ListItem link="https://help.netflix.com" text="Centro de ajuda" />
+                        <ListItem link="/youraccount" text="Conta" />
+                        <ListItem link="https://media.netflix.com/" text="Imprensa" />
+                        <ListItem link="http://ir.netflix.com/" text="Relações com investidores" />
+                        <ListItem link="https://jobs.netflix.com/jobs" text="Carreiras" />
+                        <ListItem link="/redeem" text="Resgatar cartão pré-pago" />
+                        <ListItem link="/gift-cards" text="Comprar cartão pré-pago" />
+                        <ListItem link="/watch" text="Formas de assistir" />
+                        <ListItem link="https://help.netflix.com/legal/termsofuse" text="Termos de uso" />
+                        <ListItem link="https://help.netflix.com/legal/privacy" text="Privacidade" />
+                        <ListItem link="https://help.netflix.com/legal/privacy#cookies" text="Preferências de cookies" />
+                        <ListItem link="https://help.netflix.com/legal/corpinfo" text="Informações corporativas" />
+                        <ListItem link="https://help.netflix.com/contactus" text="Entre em contato" />
+                        <ListItem link="https://fast.com" text="Teste de velocidade" />
+                        <ListItem link="https://help.netflix.com/legal/notices" text="Avisos legais" />
+                        <ListItem link="https://www.netflix.com/br/browse/genre/839338" text="Originais Netflix" />
                     </ul>
                 </div>
-                <div className="select">
+                <div className="select-container">
                     <i><IoIosGlobe size="19px" color="#999999" /></i>
                     <select>
-                        <option value="Portuguese">Português</option>
+                        <option value="Português">Português</option>
                         <option value="English">English</option>
                     </select>
                 </div>
-                <p style={{ fontSize: "13px", color: "#757575", marginTop: "27px" }}>Netflix Brasil</p>
+                <p>Netflix Brasil</p>
             </div>
         </div>
     )

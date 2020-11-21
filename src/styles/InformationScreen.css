@@ -1,0 +1,75 @@
+.screen-container {
+    height: 440px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.information-container {
+    margin-left: 190px; 
+    height: 82%
+}
+.information-container > p {
+    color: #757575; 
+    margin-top: 34px
+}
+.information-container > p > a {
+    color: #757575;
+    text-decoration: none;
+}
+.information-container > p > a:hover {
+    text-decoration: underline;
+}
+.information-container > p:last-child {
+    font-size: 13px;
+    color: #757575; 
+    margin-top: 27px
+}
+.information-list-container {
+    height: 170px;
+    width: 868px;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px
+}
+.information-list-container > ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0;
+}
+.select-container {
+    margin-top: 35px;
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+    width: 160px;
+    grid-area: select;
+}
+.select-container::after {
+    justify-self: end;
+    content: "";
+    width: 10px;
+    height: 6px;
+    background-color: #999999;
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    margin-right: 10px;
+    grid-area: select;
+}
+.select-container > i {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.select-container > select {
+    height: 50px;
+    background-color: black;
+    font-family: inherit;
+    appearance: none;
+    padding-left: 20px;
+    color: #999999;
+    border: 1.5px solid #333333;
+    border-radius: 2px;
+    text-indent: 12px;
+    padding-top: 4px;
+    grid-area: select;
+}

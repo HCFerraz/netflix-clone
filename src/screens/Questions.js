@@ -1,12 +1,12 @@
 import { HiOutlineChevronRight } from 'react-icons/hi'
-import DivisionBar from '../components/DivisionBar'
+import DivisionBar from '../components/UI/DivisionBar'
 import QuestionButton from '../components/QuestionButton'
 import '../styles/PresentationScreen.css'
 
 function Questions() {
     return (
         <>
-            <div style={{ display: "flex", justifyContent: "space-evenly", flexDirection: "column", alignItems: "center", minHeight: "850px" }}>
+            <div style={{ display: "flex", justifyContent: "space-evenly", flexDirection: "column", alignItems: "center", minHeight: "850px", backgroundColor: "#000000" }}>
                 <p style={{ fontSize: "48.5px", fontWeight: "bold", marginTop: "32px" }}>Perguntas frequentes</p>
                 <div>
                     <QuestionButton

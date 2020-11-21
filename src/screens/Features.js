@@ -1,5 +1,5 @@
 import Feature from '../components/Feature'
-import DivisionBar from '../components/DivisionBar'
+import DivisionBar from '../components/UI/DivisionBar'
 import TV from '../assets/tv.png'
 import FVid from '../assets/firstVideo.m4v'
 import Eleven from '../assets/secondScreen.jpg'
